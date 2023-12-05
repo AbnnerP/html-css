@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>utilização de midias</title>
+    <link rel="stylesheet" href="styly.css">
+</head>
+<body>
+    <h1>Configuração de midias em HTML</h1>
+    <h2>Configuração de imagem</h2>
+    <picture>
+        <source media="(max-width: 750px)" srcset="midia/img_p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="midia/img_m.png" type="image/png" >
+        <img src="midia/img_g.png" alt="Imagem grande">
+    </picture>
+    <h2>Configutração de áudio</h2>
+    <audio preload="metadata" controls><!--há a opção "autoplay"-->
+        <source src="midia/The Thought of You - TrackTribe.mp3" type="audio/mpeg">
+        <source src="midia/The Thought of You - TrackTribe.ogg" type="audio/ogg">
+        <p>Seu navegoador não suporta o tipo de arquivo, segue o arquivo para download <a href="midia/The Thought of You - TrackTribe.mp3" download="The Thougt of You - TrackTribe.mp3" type="audio/mpeg"></a></p>
+    </audio> 
+    <h2>Configuração de vídeo</h2>
+    <video id="vd" width="560" poster="" controls>
+        <source src="midia/Life path - Made with Clipchamp (2).mp4" type="video/mp4">
+        <source src="midia/Life path - Made with Clipchamp (2).webm" type="video/webm">
+        <source src="midia/Life path - Made with Clipchamp (2).ogv" type="video/ogg">
+    </video>
+   
+    <iframe id="ytb" 
+    width="560" height="315" src="https://www.youtube.com/embed/A6X_nekGEXo?si=Mf1SL8rbyQuJJD5g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <p> Página inicial <a href="../ex003/index.html"> aqui</a></p>
+
+    <h3>Curso WebDesign JS</h3>
+    <h4>File Prewiew</h4>
+    <input type="file" name="img[]" id="file" multiple>
+    <div id="gallery"></div>
+
+    <script src="jva.js"></script>
+    
+</body>
+</html>

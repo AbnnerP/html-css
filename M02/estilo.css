@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap'); /*work sans*/
+
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Work+Sans:wght@300&display=swap'); /*  Fredericka the Great*/
+
+  @font-face {
+    font-family: xmas;
+    src: url(font/Heavenly\ Christmas\ -\ Personal\ Use.otf) format(opentype);
+  }
+
+
+
+body{  
+    background-image: linear-gradient(to right, #3d6392, #c99870 );
+        
+}
+main{
+    width: 600px;   
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 02px 02px 02px #243a55;
+}
+h1{
+    text-align: center;
+    color: #3F4464;
+    font-family: Fredericka the Great;
+}
+h2{
+    color: #c99870;
+    font-family: xmas;
+    font-size: 3em;
+    font-weight: normal;
+}
+p{
+    text-align: justify;
+    text-indent: 30px;/*usado para colocar o espaço no inicio de um paragráfo */
+
+}
+div > p{/* utiilizando o "div > p" significa que o 'p' é "filho" da "div"*/
+    display: none;
+}
+div:hover>p{
+    display: block;
+    color: rgb(245, 236, 236);
+    background-color: red;
+    font-size: 3em;
+    width: 300px;
+}

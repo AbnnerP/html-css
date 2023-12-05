@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pag02</title>
+    <link rel="stylesheet" href="stylepg2.css">
+</head>
+<body>    
+    <h1>Criação de tabuada</h1>
+    <hr>
+    <h2>Código em HTM</h2>
+    <pre>
+        <code>
+            &lt;p&gt;Insira o número que será usado na tabuda: &lt;input type="number" class="txtn">&lt;/p&gt;
+            &lt;p&gt;&lt;select name="select" id="sel" class="sel" size="10">&gt;/select>&lt;/p&gt;
+            &lt;button class="btn2" onclick="criar()">Criar tabuada&lt;/button&gt;
+        </code>
+    </pre>
+    <h2>Código em JS</h2>    
+    <pre>
+        <code>
+            <p id="cjs">
+                function criar(){
+                    let btn = document.querySelectorAll('.btn')
+                    let btnsalvar = document.querySelector('.btn2')
+                    let num = document.querySelector('.txtn')
+                    let sel = document.querySelector('.sel')
+                        if (num.value.length == 0){
+                            window.alert('[Erro] insira um número')
+                        }else{
+                            let n = Number(num.value)
+                            c = 1
+                            sel.innerHTML=''
+                            while(c<=10){
+                                let item = document.createElement('option')
+                                item.innerHTML= `${n} * ${c} = ${n*c}`
+                                sel.appendChild(item)
+                                c++
+                            }
+                        }
+            </p>
+        </code>
+        <h2 class="menu">Criaçao de um menu tipo phone</h2>
+        <h3 class="menu">Código em HTML</h3>
+        <pre>
+            <code>
+                <p class="cjs2">
+                    &lt;div class="menu">
+                        &lta href="#">LinkA&lt;/a>&ltbr>
+                        &lt;a href="#">LinkB&lt;/a>
+                    </div>
+                    img id="butao" src="logo-css.png" alt="teste">
+                </p>
+            </code>
+        </pre>
+
+        <h3 class="menu1">Código JS</h3>
+        <pre>
+            <code>
+                <p class="cjs2">
+                    let buto = document.querySelector("#butao")
+                    let menu = document.querySelector(".menu")
+                    
+                            function clicar(){
+                                if(menu.classList.contains("show")){
+                    menu.classList.remove("show")//criar em css o elemente show e sua configuração (display: block)
+                                } else {
+                    menu.classList.add("show")
+                    
+                                }
+                            }
+                           
+                            buto.addEventListener('click',clicar,false)
+                </p>
+            </code>
+        </pre>
+
+        <p>Página inicial <a href="../index.html">Click aqui</a></p>
+        
+        </body>
+        </html>
+    </pre>

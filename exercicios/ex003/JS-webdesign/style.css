@@ -1,0 +1,19 @@
+.btn{
+    background-color: rgb(117, 123, 148);
+}  
+
+select{
+    width: 100px;
+}
+.txtn{
+    width: 100px;
+}
+.menu{
+    display: none;
+}
+.show{
+    display: block;
+}
+#butao{
+    cursor: pointer;
+}
