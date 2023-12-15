@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Passion+One&family=Work+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+*{
+margin: 0px;
+padding: 0px;
+}
+
+body{    
+    background: white;
+}
+header{
+    background-color: black;
+    color: white;   
+    margin-bottom: 100px; 
+}
+header h1{
+    font-family: 'Passion One', sans-serif;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 20px;    
+}
+header p{
+    text-align: center;
+    font-size: 1em;
+    font-family: 'Passion One', sans-serif;
+    font-weight: normal;
+    padding-bottom: 20px;    
+}
+a{
+    text-decoration: none;
+    color: white;    
+}
+main{
+    background-color: white;  
+    
+}
+main article{
+    text-align: left;
+    font-family: 'Sriracha', cursive; 
+    margin-bottom: 60px;
+    line-height: 2.5em;
+    font-size: 1.2em; 
+    padding: 20px;   
+}
+div#img01{
+    box-shadow: 03px 02px 8px 0px rgba(128, 128, 128, 0.633);
+    background: url("imagens/background001.jpg") center right no-repeat fixed;
+    background-size: cover;    
+}
+#img01 article{
+    margin: 40px 0px;
+}
+#img01 article>p{
+    color: white;
+    background-color: rgba(16, 15, 15, 0.425);;
+    width: 300px;
+}   
+article#img02{
+    background: url(imagens/background002.jpg) left center no-repeat fixed;
+    background-size: cover; 
+    box-shadow: 03px 02px 8px 0px rgba(128, 128, 128, 0.633);
+}
+#img02>p{
+    background-color: rgba(16, 15, 15, 0.425);
+    width: 300px;
+    color: white; 
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
