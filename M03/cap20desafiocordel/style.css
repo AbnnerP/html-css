@@ -18,7 +18,8 @@ header h1{
     font-family: 'Passion One', sans-serif;
     text-align: center;
     font-size: 3em;
-    padding-top: 20px;    
+    padding-top: 20px; 
+    font-variant: small-caps;   
 }
 header p{
     text-align: center;
