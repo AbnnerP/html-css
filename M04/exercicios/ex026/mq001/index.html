@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <link rel="stylesheet" href="estilo/style.css" media="all" and (max-width: 600px)>
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+    <link rel="stylesheet" href="estilo/telamaior.css" media="screen and (min-width: 600px)">
 </head>
 <body>
     <header>
@@ -13,10 +14,10 @@
         <menu>           
             <buttom onclick="clicar()"><img src="imagens/hamburger_menu.png" alt="botão menu para telas pequenas" id="imenu"></buttom>            
                 <ul id="menu">
-                    <li><a href="#">Opção 1</a></li>
-                    <li><a href="#">Opção 2</a></li>
-                    <li><a href="#">Opção 3</a></li>
-                    <li><a href="#">Opção 4</a></li>
+                    <li class="nav"><a href="#">Opção 1</a></li>
+                    <li class="nav"><a href="#">Opção 2</a></li>
+                    <li class="nav"><a href="#">Opção 3</a></li>
+                    <li class="nav"><a href="#">Opção 4</a></li>
                 </ul>            
         </menu>
     </header>
@@ -35,14 +36,26 @@
     </main>
     <script>
         var menu = document.getElementById("menu");
+        var nave = document.getElementsByClassName("nav")
+         
         function clicar(){
            if(menu.style.display === "block"){
                 menu.style.display ="none";
            } else{
             menu.style.display = "block";
-           }          
+           }   
+        }  
+        window.addEventListener('resize', function(){
 
-        }
+            if (window.innerWidth >=610) {
+                menu.style.display = "block";
+            }
+            else{
+                menu.style.display ="none";
+            }
+
+})
+           
     </script>
 </body>
 </html>

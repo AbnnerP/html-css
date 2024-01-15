@@ -31,8 +31,6 @@ ul#menu{
 ul li{
     padding: 10px;
 } 
-
-
 menu ul>li>a{
     text-decoration: none;
     color: rgb(12, 12, 12);    
@@ -40,8 +38,7 @@ menu ul>li>a{
 ul>li:hover{
     display: block;  
     background-color: rgb(209, 208, 208);
-    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.397);
-            
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.397);            
 }
 
 img#imenu{
@@ -70,3 +67,4 @@ article{
 article p{
     margin: 10px 0px;
 }
+
