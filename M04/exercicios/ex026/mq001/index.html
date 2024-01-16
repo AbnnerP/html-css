@@ -37,14 +37,6 @@
     <script>
         var menu = document.getElementById("menu");
         var nave = document.getElementsByClassName("nav")
-         
-        function clicar(){
-           if(menu.style.display === "block"){
-                menu.style.display ="none";
-           } else{
-            menu.style.display = "block";
-           }   
-        }  
         window.addEventListener('resize', function(){
 
             if (window.innerWidth >=610) {
@@ -54,7 +46,15 @@
                 menu.style.display ="none";
             }
 
-})
+            })
+        function clicar(){
+           if(menu.style.display === "block"){
+                menu.style.display ="none";
+           } else{
+            menu.style.display = "block";
+           }   
+        }  
+       
            
     </script>
 </body>
