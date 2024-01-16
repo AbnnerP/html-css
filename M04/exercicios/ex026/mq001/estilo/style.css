@@ -38,7 +38,8 @@ menu ul>li>a{
 ul>li:hover{
     display: block;  
     background-color: rgb(209, 208, 208);
-    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.397);            
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.397);
+    cursor: pointer;            
 }
 
 img#imenu{
@@ -48,6 +49,7 @@ img#imenu{
 #imenu:hover{
     transform: translate(-3px,-3px);
     box-shadow: 2px 2px 0px rgba(141, 140, 140, 0.393);
+    cursor: pointer;
 }
 main{
     max-width: 600px;
@@ -63,6 +65,7 @@ main h1{
 article{
     text-align: justify;
     padding: 10px;
+    text-indent: 20px;
 }
 article p{
     margin: 10px 0px;
